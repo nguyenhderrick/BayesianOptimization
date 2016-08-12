@@ -140,6 +140,7 @@ BayesianOptimization.MySQL$methods(
   }
 )
 
+# Script below forked from Kaggle open source
 
 ##### Removing IDs
 train$ID <- NULL
@@ -238,6 +239,8 @@ boost.hyper <- function(x){
   return(max(clf$test.auc.mean))
 }
 
+### Hyper parameter tuning using baysian optimization of kaggle open source 
+### gradient boosting algorithm.
 con <- dbConnect(MySQL(),"XGBOUT", username = "root", password = "0000")
 hyper.bounds <- list(eta = c(0, .07), max_depth = c(1,7), 
                      subsample = c(0.6, 1), colsample_bytree = c(0.6, 1), 
