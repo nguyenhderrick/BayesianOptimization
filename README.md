@@ -1,3 +1,3 @@
 # BayesianOptimization
 
-![](http://imgur.com/RFAdKfC)
+![](http://i.imgur.com/RFAdKfC.gif)
